@@ -7,6 +7,7 @@ def get_dates_in_interval(start,end):
         return None
     elif start > end:
         return None
+        
     begin_date = datetime.datetime.strptime(start,DATE_FORMAT)
     end_date = datetime.datetime.strptime(end,DATE_FORMAT)
     total_days = (end_date - begin_date).days +1
